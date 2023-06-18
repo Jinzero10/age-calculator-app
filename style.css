@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+
+:root{
+
+--primary-Purple: hsl(259, 100%, 65%);
+--primary-red: hsl(0, 100%, 67%);
+
+
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Light-grey);
+}
+main{
+    padding: 3rem;
+    background-color: var(--Off-white);
+    max-width: 100%;
+    border-radius: 20px;
+}
+label{
+    display: block;
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: var(--Smokey-grey);
+    letter-spacing: .2rem;
+    outline: var(--primary-Purple);
+}
+p{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3.4rem;
+    margin: 0;
+   
+}
+input{
+    border: 1px solid #f0f0f0;
+    max-width: 7rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+}
+.form_input input:focus{
+    outline: 0;
+}
+input::placeholder{
+    font-weight: 800;
+    font-size: 1rem;
+}
+small{
+    display: block;
+    font-style: italic;
+    color: #ff3860;
+    font-size: 9px;
+    padding: .3rem .5rem;
+}
+.form_container{
+    display: flex;
+    gap: 1.5rem;
+}
+.result_container{
+    text-align: center;
+}
+#bd{
+    text-align: center;
+    font-size: 3rem;
+}
+span{
+    color: var(--primary-Purple);
+}
+.result_container button{
+    cursor: pointer;
+    padding: 1rem .7rem;
+    margin-top: .5rem;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--primary-Purple);
+}
+.result_container img{
+    width: 3rem;
+    height: 2rem;
+}
+.form_input.label label{
+    color: #ff3860;
+}
+.form_input.labelsuc label{
+    color: var(--Smokey-grey);
+}
+.form_input.success input{
+    border-color: #09c372;
+}
+.form_input.error input{
+    border-color: #ff3860;
+}
+@media (min-width: 1000px) {
+    main{
+        width: 60vw;
+        border-radius: 20px 20px 150px 20px;
+    }
+    p{
+        font-size: 4rem;
+    }
+}
